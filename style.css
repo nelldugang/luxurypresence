@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins" !important;
+}
+
+p {
+  font-size: 16px !important;
+}
+
+.navbar {
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+.navbar-brand {
+  margin-right: -80px;
+}
+
+.navbar-img {
+  width: 150px;
+}
+.nav-link {
+  font-size: 16px;
+  color: black !important;
+}
+
+.navbar-nav {
+  margin: auto;
+  background-color: white;
+  margin-top: -15px;
+  padding: 20px 20px 10px 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.navbar-div {
+  /* background: url("https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjQxNDUyfQ&w=1920")
+    rgba(0, 0, 0, 0.3);
+  height: 100dvh;
+  background-size: cover;
+  background-blend-mode: multiply; */
+  /* background-color: rgba(0, 0, 0, 20); */
+}
+
+.mkv {
+  background: url("https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjQxNDUyfQ&w=1920")
+    rgba(0, 0, 0, 0.3);
+  height: 50dvh;
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: white;
+  margin-top: -100px;
+  display: flex;
+  align-items: center;
+  background-position: center center;
+}
+
+.mkv h1 {
+  margin: auto;
+  font-size: 100px;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav-link:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mkv h1 {
+    font-size: 50px;
+  }
+}
+
+.search .row {
+  text-align: center;
+}
+
+.search .col-4 {
+  padding: 50px;
+  margin: 10px;
+  background-color: white;
+  margin-top: -80px;
+  box-shadow: -7px 10px 29px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -7px 10px 29px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -7px 10px 29px 0px rgba(0, 0, 0, 0.75);
+}
+
+.section2 {
+  padding: 100px 65px;
+}
+
+.section2 h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 100px;
+}
+
+.section2 .marketing {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+.marketing img {
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.section2 .icons {
+  margin: auto;
+  width: 100px;
+}
+
+.section2 .col {
+  /* text-align: center; */
+}
+
+.icon-padding {
+  padding: 50px;
+}
+
+.section2 h5 {
+  color: #aa9a51;
+}
+
+.section3 {
+  background-color: #e9ecef;
+  padding-top: 100px;
+}
+.fw-semibold {
+  padding: 20px;
+}
+
+.section3 .img-fluid {
+  border-radius: 10px;
+}
+
+.section3 {
+  padding: 100px 65px;
+}
+
+.section4 {
+  color: black;
+}
+
+.timeline-steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.timeline-steps .timeline-step {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 1rem;
+}
+
+@media (min-width: 768px) {
+  .timeline-steps .timeline-step:not(:last-child):after {
+    content: "";
+    display: block;
+    border-top: 0.25rem dotted #3b82f6;
+    width: 3.46rem;
+    position: absolute;
+    left: 7.5rem;
+    top: 0.3125rem;
+  }
+  .timeline-steps .timeline-step:not(:first-child):before {
+    content: "";
+    display: block;
+    border-top: 0.25rem dotted #3b82f6;
+    width: 3.8125rem;
+    position: absolute;
+    right: 7.5rem;
+    top: 0.3125rem;
+  }
+}
+
+.timeline-steps .timeline-content {
+  width: 10rem;
+  text-align: center;
+}
+
+.numbers p {
+  font-size: 15px;
+  background-color: gray;
+}
+
+.rounded-pill {
+  font-size: 20px !important;
+}
+
+.img-selling {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.images-text {
+  padding: 100px 65px !important;
+}
+
+.featurette-image {
+  border-radius: 10px;
+}
+
+.box-shad {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 20px;
+}
+
+.brands img {
+  width: 100%;
+  padding: 30px;
+}
+
+.icons2 img {
+  width: 100px;
+}
+
+.cta {
+  background: url("https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/skkve0aqzhkkyiytn92d/work-with-us")
+    rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: white;
+  padding: 100px 65px;
+  display: flex;
+  align-items: center;
+  background-position: center center;
+  border: 10px solid #aa9a51;
+}
+
+.ipadsection {
+  padding: 100px 65px;
+}
+
+.ipadsection .mb-3 {
+  color: #aa9a51;
+}
+
+.text-secondary {
+  padding: 20px;
+}
+
+.pe-4 {
+  padding-left: 1.5rem;
+}
+
+.ps-6 {
+  padding: 20px 20px;
+}
+
+.over33,
+.steps-container,
+.welcome-section {
+  padding: 100px 65px;
+}
+
+.featurette {
+  background-color: #fffdf2;
+}
+
+.bg-info-light {
+  background-color: #fffdf2;
+}
+
+.featurette p {
+  padding: 0 20px;
+}
+
+.welcome-section {
+  background: url("img/arch.jpg") rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 100px 65px;
+  color: white;
+  display: flex;
+  align-items: center;
+  background-position: center center;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.steps-neg-margin {
+  margin-top: -80px;
+}
+
+.over33 {
+  background-color: #ffffff;
+  background-image: url("https://transparenttextures.com/patterns/beige-paper.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.btn-color {
+  background-color: #aa9a51;
+}
+
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+.search-input {
+  background-color: #212529;
+  border: 0;
+}
+
+.search-input,
+.search-input:focus {
+  color: white;
+}
+
+.modal-content {
+  padding: 50px;
+}
